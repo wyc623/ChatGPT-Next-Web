@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = 'edge';
+
 async function handle(
   req: NextRequest,
   { params }: { params: { path: string[] } },
