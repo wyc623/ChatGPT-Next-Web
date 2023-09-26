@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = 'edge';
-
 async function handle(
   req: NextRequest,
   { params }: { params: { path: string[] } },
@@ -42,4 +40,4 @@ export const POST = handle;
 export const GET = handle;
 export const OPTIONS = handle;
 
-export const runtime = "nodejs";
+export const runtime = "edge";
