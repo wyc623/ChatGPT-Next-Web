@@ -5,6 +5,8 @@ import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: "ChatGPT Next Web",
   description: "Your personal ChatGPT Chat Bot.",
